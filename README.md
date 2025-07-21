@@ -1,0 +1,1 @@
+# Chess_FideRating_Predictor
