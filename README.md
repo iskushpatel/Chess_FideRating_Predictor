@@ -1,4 +1,4 @@
-# Chess Rating Prediction Project
+# Chess Rating Predictor
 ## Project Overview
 This project aims to predict FIDE Standard chess ratings based on a player's ratings on Chess.com (Blitz, Rapid, and Bullet). By leveraging machine learning techniques, we explore the relationship between online chess ratings and the official FIDE Standard rating.
 ## Data
@@ -30,10 +30,6 @@ This project combines player rating data from two major sources:
   - Player names from FIDE were normalized (case lowered, stripped of punctuation/whitespace).
   - Fuzzy matching (`token_sort_ratio`) was applied to find the closest matching names in the Chess.com dataset.
   - Matches with a score ≥ 85 were considered reliable.
-- **Limitations**:
-  - Some players may use pseudonyms or different display names on Chess.com, so perfect accuracy is not guaranteed.
-  - Missing rating fields are possible if the player is inactive or the data was incomplete.
-"""
 
 
 ## Data Preprocessing and Exploration
