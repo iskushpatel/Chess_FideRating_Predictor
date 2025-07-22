@@ -2,7 +2,7 @@
 ## Project Overview
 This project aims to predict FIDE Standard chess ratings based on a player's ratings on Chess.com (Blitz, Rapid, and Bullet). By leveraging machine learning techniques, we explore the relationship between online chess ratings and the official FIDE Standard rating.
 ## Data
-The dataset used in this project is loaded from the CSV file ` [Chess.com-FIDE_Rating.csv](https://)``. It contains FIDE ratings (Standard, Rapid, and Blitz) and Chess.com ratings (Blitz, Rapid, and Bullet) for a collection of chess players.
+The dataset used in this project is loaded from the CSV file [Chess.com-FIDE_Rating.csv](https://). It contains FIDE ratings (Standard, Rapid, and Blitz) and Chess.com ratings (Blitz, Rapid, and Bullet) for a collection of chess players.
 
 ## 📥 How Data Is Collected
 This project combines player rating data from two major sources:
@@ -49,7 +49,8 @@ We trained and evaluated several regression models to predict the FIDE Standard 
 2.  **Decision Tree Regressor:** A tree-based model capable of capturing non-linear relationships.
 3.  **Random Forest Regressor:** An ensemble method using multiple decision trees to improve robustness and accuracy. Hyperparameter tuning was performed using `GridSearchCV`.
 4.  **XGBoost Regressor:** Another powerful gradient boosting model known for its performance. Hyperparameter tuning was also performed using `GridSearchCV`.
-For each model, we used the **`print_metrics** function to report the Mean Squared Error (MSE) and R-squared score on both the training and testing sets.
+
+For each model, we used the **print_metrics** function to report the Mean Squared Error (MSE) and R-squared score on both the training and testing sets.
 The features used for training the models were 'Chess.com_bullet', 'Chess.com_blitz', and 'Chess.com_rapid', while the target variable was 'FIDE_Standard'. The data was split into training and testing sets using `train_test_split`.
 ## Model Performance Comparison
 The following R-squared scores were obtained for each model on the test set:
